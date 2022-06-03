@@ -17,23 +17,23 @@ Scanner input = new Scanner(System.in);
  System.out.println( " 3. sayiniz yaziniz \"c\"  ");
  c= input.nextInt();
 
- if ((a>b && a>c)){
-    if (b>c){
-        System.out.println("Büyükten küçüğe sırayla: " + a + ", " + b + ", " + c + "." );
+ if ((a<b && a<c)){
+    if (b<c){
+        System.out.println("Küçükten büyüğe sırayla: " + a + ", " + b + ", " + c + "." );
     }else{
-        System.out.println("Büyükten küçüğe sırayla: " + a + ", " + c + ", " + b + "." ) ;
+        System.out.println("Küçükten büyüğe sırayla: " + a + ", " + c + ", " + b + "." ) ;
     }
-}else if ((b>a && b>c)){
-    if (a>c){
-        System.out.println("Büyükten küçüğe sırayla: " + b + ", " + a + ", " + c + "." );
+}else if ((b<a && b<c)){
+    if (a<c){
+        System.out.println("Küçükten büyüğe sırayla: " + b + ", " + a + ", " + c + "." );
     }else{
-        System.out.println("Büyükten küçüğe sırayla: " + b + ", " + c + ", " + a + ".");
+        System.out.println("Küçükten büyüğe sırayla: " + b + ", " + c + ", " + a + ".");
     }
 }else{
-    if (a>b){
-        System.out.println("Büyükten küçüğe sırayla: " + c + ", " + a + ", " + b + ".");
+    if (a<b){
+        System.out.println("Küçükten büyüğe sırayla: " + c + ", " + a + ", " + b + ".");
     }else{
-        System.out.println("Büyükten küçüğe sırayla: " + c + ", " + b + ", " + a + ".");
+        System.out.println("Küçükten büyüğe sırayla: " + c + ", " + b + ", " + a + ".");
     }
 }
 }
